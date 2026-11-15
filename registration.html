@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Class | Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quran Class</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Register for a Class</h2>
+            <p>Complete the form to choose your class.</p>
+
+            <form id="registration-form">
+                <label for="student-name">Full name</label>
+                <input type="text" id="student-name"
+                       name="studentName" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email"
+                       name="email" required>
+
+                <label for="class-choice">Choose a class</label>
+                <select id="class-choice" name="classChoice" required>
+                    <option value="">Select a class</option>
+                    <option value="Beginner Reading">Beginner Reading</option>
+                    <option value="Recitation Practice">Recitation Practice</option>
+                    <option value="Memorization">Memorization</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <p id="confirmation" role="status"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
+<button type="button" id="cancel-registration">
+    Cancel saved registration
+</button>
